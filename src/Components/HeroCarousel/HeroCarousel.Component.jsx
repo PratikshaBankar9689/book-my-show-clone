@@ -3,7 +3,7 @@ import HeroSlider from "react-slick";
 import { NextArrow, PrevArrow } from "./Arrows.Component";
 
 const HeroCarousel = () => {
-  const [images, setImages] = useState([
+  const [images, setImage] = useState([
     {
       adult: false,
       backdrop_path: "/ugS5FVfCI3RV0ZwZtBV3HAV75OX.jpg",
@@ -44,7 +44,6 @@ const HeroCarousel = () => {
     arrows: true,
     slidesToShow: 1,
     infinite: true,
-    speed: 500,
     slideToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
