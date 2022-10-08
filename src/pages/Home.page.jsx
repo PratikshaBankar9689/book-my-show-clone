@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 import DefaultLayoutHoc from "../layout/Default.Layout";
 
@@ -11,6 +12,35 @@ const HomePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
+
+  useEffect(() => {
+    const requestPopularMovies = async () => {
+      const getPopularMovies = await axios.get("/movie/popular");
+      setRecommendedMovies(getPopularMovies.data.results);
+    };
+
+    requestPopularMovies();
+  }, []);
+
+  useEffect(() => {
+    const requestTopRatedMovies = async () => {
+      const getTopRatedMovies = await axios.get(
+        "https://api.themoviedb.org/3/movie/top-rated?api_key=16d4a0ec983a86f0ec216b15e3d51b5c"
+      );
+      setPremierMovies(getTopRatedMovies.data.results);
+    };
+
+    requestTopRatedMovies();
+  }, []);
+
+  useEffect(() => {
+    const requestUpcomingMovies = async () => {
+      const getUpcomingMovies = await axios.get("/movie/upcoming");
+      setOnlineStreamEvents(getUpcomingMovies.data.results);
+    };
+
+    requestUpcomingMovies();
+  }, []);
 
   return (
     <>
