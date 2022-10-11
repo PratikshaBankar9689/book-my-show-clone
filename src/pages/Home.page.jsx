@@ -24,9 +24,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const requestTopRatedMovies = async () => {
-      const getTopRatedMovies = await axios.get(
-        "https://api.themoviedb.org/3/movie/top-rated?api_key=16d4a0ec983a86f0ec216b15e3d51b5c"
-      );
+      const getTopRatedMovies = await axios.get("/movie/top_rated");
       setPremierMovies(getTopRatedMovies.data.results);
     };
 

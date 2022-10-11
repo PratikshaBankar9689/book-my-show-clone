@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MovieContext } from "../../context/Movie.context";
-import MovieInfo from "./MovieInfo.Component";
+import MovieInfo from "./Movieinfo.Component";
 
 const MovieHero = () => {
   const { movie, rentMovie, buyMovie } = useContext(MovieContext);
