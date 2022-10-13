@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# Book My Show
+
+This is clone of BookMyShow website.This website is basically for entertainment purpose.
+
+## Technologies used
+
+In this Project,a few technologies and packages were used,listed below
+
+1.React
+2.Tailwind
+3.React-Slick
+4.React-Icons
+5.React Context API
+6.Axios
+7.React-router-dom
+
+## Install the packages
+
+npx create-react-app app_name
+And
+npm install tailwind css postcss autoprettier react-slick slick-carousel axios
+
+## Snapshots
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
