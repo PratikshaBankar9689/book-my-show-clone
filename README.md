@@ -14,13 +14,12 @@ In this Project,a few technologies and packages were used,listed below
 6.Axios
 7.React-router-dom
 
+
 ## Install the packages
 
 npx create-react-app app_name
 And
 npm install tailwind css postcss autoprettier react-slick slick-carousel axios
-
-## Snapshots
 
 ## Getting Started with Create React App
 

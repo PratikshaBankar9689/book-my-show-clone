@@ -1,17 +1,5 @@
 import React from "react";
 
-export function PrevArrow(props) {
-  return (
-    <>
-      <div
-        className={props.className}
-        style={{ ...props.style }}
-        onClick={props.onClick}
-      />
-    </>
-  );
-}
-
 export function NextArrow(props) {
   return (
     <>
@@ -22,4 +10,16 @@ export function NextArrow(props) {
       />
     </>
   );
-}
+};
+
+export function PrevArrow(props) {
+  return (
+    <>
+      <div
+        className={props.className}
+        style={{ ...props.style }}
+        onClick={props.onClick}
+      />
+    </>
+  );
+};
