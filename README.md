@@ -6,20 +6,20 @@ This is clone of BookMyShow website.This website is basically for entertainment 
 
 In this Project,a few technologies and packages were used,listed below
 
-1.React
-# 2.Tailwind
-# 3.React-Slick
-4.React-Icons
-5.React Context API
-6.Axios
-7.React-router-dom
+## 1.React
+## 2.Tailwind
+## 3.React-Slick
+## 4.React-Icons
+## 5.React Context API
+## 6.Axios
+## 7.React-router-dom
 
 
 ## Install the packages
 
 npx create-react-app app_name
 And
-npm install tailwind css postcss autoprettier react-slick slick-carousel axios
+### npm install tailwind css postcss autoprettier react-slick slick-carousel axios
 
 ## Getting Started with Create React App
 
