@@ -7,8 +7,8 @@ This is clone of BookMyShow website.This website is basically for entertainment 
 In this Project,a few technologies and packages were used,listed below
 
 1.React
-2.Tailwind
-3.React-Slick
+# 2.Tailwind
+# 3.React-Slick
 4.React-Icons
 5.React Context API
 6.Axios
